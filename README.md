@@ -46,3 +46,22 @@ The home splash page will pop up when you enter Gmail.
 * Drag any of the application widgets to customise your splash page. Its position will remain consistent across different 
 browser tabs (You may need to refresh your browser to see its effects).
 * Click the `Something else` tab to acess the game, which will sort your emails. Note that the game hasn't been integrated into the browser extension yet.
+
+## Other Info
+- The implementation consists of extensive Object Oriented JavaScript Design in a `App` -> `Tab` -> `Widget` -> `Dom HTML/CSS` hierarchy.
+- Game was built on Phaser 3 web game engine.
+
+### Systematic Process of Work & XP Practices
+Throughout the duration, each team member took on a number of the **Extreme Programming** roles. These roles, the role rotation schedule and their responsibilities were documented separately in the wiki from the very first week. Roles were rotated/handed over during out weekly Team Meeting.
+
+#### Pair Programming
+At the half-way point, the team split up into groups of 2-3 to conduct pair programming. This was due to the increse in demands by the client, thus requiring a lot more decision making and learning.
+
+#### Code Styles
+The group followed the Google JavaScript and HTML/CSS style guides as much as possible. This took extra effort but made the code more uniform and readable. The JavaScript code also follows object-oriented principles wherever applicable. This was achieved by using different design patterns and separating objects into classes. As a result, it allowed for more modularity which made for easier testing and debugging. Furthermore, the code was more flexible through the use of polymorphism and inheritance, new widget classes could be easily created and deleted depending on scope changes without affecting other classes.
+
+#### Version Control/Issue Tracking
+The team conducted version control using Git. They made sure to work on side branches when implementing new features and only push to master-branch by submitting pull requests. This allowed the master branch to only contain working code at all times. It was also easy to conduct code reviews as changes of each commit were clearly visible.
+
+#### Test-driven Development
+The tests were set up to run automatically with each push through Bitbucket’s pipeline, other group members could quickly and easily see if their changes had broken any other part of the code.
