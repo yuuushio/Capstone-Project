@@ -47,6 +47,10 @@ The home splash page will pop up when you enter Gmail.
 browser tabs (You may need to refresh your browser to see its effects).
 * Click the `Something else` tab to acess the game, which will sort your emails. Note that the game hasn't been integrated into the browser extension yet.
 
+## Demo
+
+<img src="https://raw.githubusercontent.com/yuuushio/Capstone-Project/main/gr_demo.gif" width="600"/>
+
 ## Other Info
 - The implementation consists of extensive Object Oriented JavaScript Design in a `App` -> `Tab` -> `Widget` -> `Dom HTML/CSS` hierarchy.
 - Game was built on Phaser 3 web game engine.
