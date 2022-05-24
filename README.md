@@ -8,6 +8,8 @@ Lastly, the plugin provides a means of sorting a user's emails into categories i
 
 **Note:** *This project was initially on BitBucket - where all the CICD and TDD tools were integrated (equivalent of GitHub actions) by having each push/commit run through tests to ensure the build was successful and tests were passing.*
 
+**Note:** *Original commit history has been removed due to privacy purposes.*
+
 ## Modules
 
 This project manages its files with ES6 Modules.
