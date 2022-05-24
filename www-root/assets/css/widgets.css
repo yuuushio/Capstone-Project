@@ -1,0 +1,75 @@
+.widget {
+    height: 100px;
+    width: 400px;
+    border-style: solid;
+    border-color: #646a70;
+    border-radius: 10px;
+    display: flex;
+    font-size: 100px;
+    justify-content: center; /*centre items vertically*/
+    align-items: center;
+    margin: 0 40px 60px 60px;
+}
+
+.gr-widget-dock {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #EEF2F8;
+    border-radius: 10px;
+    bottom: 0;
+    position: absolute;
+    margin: auto auto 30px;
+}
+
+.gr-widget-container {
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gr-widget-container::after {
+    content: '';
+    width: 400px;
+    margin: 0 40px 60px 60px;
+}
+
+.gr-widget-indock {
+    height: 70px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.gr-widget-indock .widget {
+    height: 70px;
+    width: 70px;
+    border: none;
+    justify-content: center; /*centre items vertically*/
+    align-items: center;
+    margin: 0 5px 0 5px;
+}
+
+.gr-widget-indock .widget .icon {
+    width: 48px;
+    height: 48px;
+    vertical-align: top;
+}
+
+.gr-widget-indock .widget .icon img {
+    max-width: 50px;
+    max-height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* hide widget view when in dock */
+.gr-widget-indock .widget .view {
+    display: none;
+}
+
+/* hide widget name, search and compose when in dock */
+.gr-widget-indock .widget .name, .search, .compose {
+    display: none;
+}

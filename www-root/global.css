@@ -1,0 +1,740 @@
+/**
+* Place your custom CSS styles here.
+**/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+
+/* -- footer -- */
+.gr-footer {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gr-main-dock{
+    max-width: 966px;
+    width: 90%;
+    min-height: 60px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #EEF2F8;
+}
+:root {
+    --gradient: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
+}
+
+.gr-circle-spacer{
+    width:100px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gr-circle-container{
+    height: 85%;
+    width: 85%;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: bg-animation 12s infinite alternate;
+    outline:none;
+    transition: 0.4s;
+}
+.gr-circle-container:hover{
+    height: 85%;
+    width: 85%;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #b682cf, #9b93cd);
+    background-size: 400%;
+    animation: bg-animation 12s infinite alternate;
+
+}
+@keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+}
+
+.gr-circle-content {
+    height: 90%;
+    width: 90%;
+    background-color: #EEF2F8;
+    border-radius: 50%;
+    cursor: pointer;
+    border:none;
+    font-family: sans-serif;
+    color: #272727;
+    outline:none;
+}
+
+.gr-circle-content:active, .gr-circle-content:focus, .gr-circle-content:visited{
+    outline:none;
+
+}
+
+.gr-circle-content img {
+    height: 50%;
+    opacity: 50%;
+}
+
+#gr-header {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #272727;
+    font-size: 30px;
+    position: absolute;
+}
+
+
+.gr-inner {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.gr-docs-widget {
+    --theme-colour: #4285f4;
+}
+
+.gr-sheet-widget {
+    --theme-colour: #34a853;
+}
+
+.gr-slides-widget {
+    --theme-colour: #fbbc04;
+}
+
+.gr-calendar-widget {
+    --theme-colour: #4285f4;
+}
+
+.gr-forms-widget {
+    --theme-colour: #4c5dbb;
+}
+
+.gr-meet-widget {
+    --theme-colour: #028e81;
+}
+
+.gr-chat-widget {
+    --theme-colour: #028e81;
+}
+
+.gr-drive-widget {
+    --theme-colour: #fbbc04;
+}
+
+.gr-apps-script-widget {
+    --theme-colour: #ea4335;
+}
+
+.gr-sites-widget {
+    --theme-colour: #4c5dbb;
+}
+
+.gr-cloud-search-widget {
+    --theme-colour: #4285f4;
+}
+
+.gr-keep-widget {
+    --theme-colour: #fbbc04;
+}
+
+.gr-currents-widget {
+    --theme-colour: #4285f4;
+}
+
+.gr-wid {
+    /*width: 279px;
+    border-radius: 10px;
+    display: flex;*/
+    touch-action: none;
+}
+
+/* widget itself */
+.gr-app-cont {
+    width: 279px;
+    height: 56px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #EEF2F8;
+    margin-top: 10px;
+}
+
+/* placeholder colour - use "id" to do specifics*/
+.gr-side-line {
+    height: 70%;
+    width: 1px;
+
+    /* vertical align relative to the outer div */
+    position: relative;
+    background-color: var(--theme-colour, #ea4335);
+    margin-left: 2%;
+    opacity: 70%;
+}
+
+img {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.gr-icon-div {
+    height: 1.1em;
+    width: 10px;
+    position: relative;
+    opacity: 75%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+}
+
+.gr-app-text {
+    position: relative;
+    width: 50px;
+    text-align: left;
+
+    /*changing cursor type when the text is hovered over*/
+    cursor: context-menu;
+
+    font-family: 'Josefin Sans', sans-serif;
+    color: #272727;
+    font-size: 15px;
+    margin-top: 3px;
+    margin-left: 2%;
+}
+
+
+.gr-view {
+    height: 21px;
+    width: 46px;
+
+    position: relative;
+    background-color: #eef2f8;
+
+    border-radius: 8px;
+    border: 1px solid #e6e9f0;
+    padding-top: 2px;
+    text-align: center;
+
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5A5B5C;
+    font-size: 12px;
+
+    margin-left: 13%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.gr-view:hover {
+    background-color: #e6e9f0;
+    border-color: #e6e9f0;
+}
+
+button:focus {
+    /*removes the black outline you normally get
+    when you click on a button*/
+    outline: 0;
+}
+
+.gr-search {
+    height: 31px;
+    width: 33px;
+    outline: none;
+    position: relative;
+    border-radius: 50%;
+    background-color: #eef2f8;
+    border: none;
+
+    transition-duration: 0.4s;
+}
+
+.gr-sicon {
+    height: 12px;
+    width: 12px;
+    border: none;
+    color: #272727;
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    padding-top:1px;
+    opacity: 65%;
+}
+
+.gr-search:hover {
+    background-color: #e6e9f0;
+    border-color: #e6e9f0;
+}
+
+.gr-compose {
+    background-color: var(--theme-colour, #ea4335);
+    opacity: 65%;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 2%;
+
+
+    /*TRANSITION DURATION 0.3 INSTEAD OF 0.4*/
+    transition-duration: 0.3s;
+}
+
+.gr-compose:hover {
+    opacity: 90%;
+}
+
+
+/* The big + button in the widgets */
+.gr-cross {
+    color: white;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-top: -11px;
+}
+
+.gr-title {
+    cursor: context-menu;
+    min-height: 30px;
+    overflow:hidden;
+    padding-bottom: 5px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.gr-title img {
+    max-height: 50px;
+    padding: 25px 10px 15px 10px;
+}
+
+.gr-login-button-div{
+    width:100%;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 3px;
+}
+
+#gr-login-button{
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    padding:10px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    color: #f5e9ea;
+    border-radius: 4px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background-image: linear-gradient(to right,#ed646e , #f06a73);
+    min-height: 30px;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 8px;
+    transition-duration: 0.4s;
+}
+
+#gr-login-button:hover{
+    border-radius: 10px;
+}
+
+/* Tab buttons */
+
+.gr-tab-button-container-outer {
+    width: 100%;
+    height:30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.gr-tab-button-container {
+    height: 100%;
+    margin: 0 auto;
+    background-color: #ebf0f5;
+    position: relative;
+    text-align: center;
+    border: 1px;
+    border-radius: 40px;
+    /*margin-bottom: 20px;
+    margin-top: 10px;
+     */
+
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+
+.gr-tab-button {
+    /*padding: 0.3em;*/
+
+    cursor: pointer;
+
+    user-select: none;
+
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    border: 1px;
+    border-radius: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: #333233;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.gr-tab-button:hover{
+    background-color: #eaeff4;
+}
+
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* scroll bar style test*/
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.gr-tab-button.gr-active {
+    color: #EB3349;
+    background-color: #e8ebf1;
+}
+
+
+.gr-game-iframe{
+    border:none;
+    outline:none;
+    margin: 0 auto;
+    display:block;
+    border-radius: 6px;
+    background-color: #000000;
+}
+/*
+.gr-tab-button-close {
+    color: #aaa;
+    padding: 4px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -14%;
+    transform: translate(9px, 8px);
+}
+
+.gr-tab-button-close:hover,
+.gr-tab-button-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+*/
+.project-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.gr-project-text {
+    position: relative;
+    width: 100px;
+    text-align: left;
+
+    font-family: 'Josefin Sans', sans-serif;
+    color: #272727;
+    font-size: 15px;
+}
+
+.gr-project-button:hover {
+    cursor: pointer;
+    opacity: 90%;
+}
+
+
+/*
+.project-compose-button {
+    background-color: white;
+    opacity: 70%;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+
+}*/
+
+.project-compose-button.invalid {
+    filter: grayscale(100%);
+    cursor: not-allowed;
+}
+
+.project-compose-button:hover {
+    opacity: 100%;
+}
+
+/* ProjectDetailsTab Specific Styles */
+.gr-project-details-tab {
+    display: block;
+    width: 80%;
+    height: max-content;
+    text-align: center;
+    margin: auto;
+}
+
+.gr-project-details-tab input:not([type="color"]):not([type="checkbox"]), .gr-project-details-tab select {
+    min-width: 500px;
+}
+
+
+/* Project Widgets */
+.gr-project-widget.highlighted {
+    background-color: #ecfb04;
+}
+
+/*--*/
+.project-compose-button{
+    display:none;
+}
+
+.project-compose-widget{
+    width: 150px;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #1473e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 82%;
+    padding-top: 2px;
+    outline:none;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+.project-compose-widget:hover  {
+
+    opacity: 90%;
+}
+
+.gr-project-compose-text {
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #f7fcff;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+#gr-project-import, #gr-project-export{
+    border: none;
+    height: 35px;
+    background-color: #ebf0f5;
+    border-radius: 2px;
+    width: 150px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #393a3c;
+    font-size: 18px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    margin:0 auto;
+}
+
+
+#gr-project-import:hover {
+    box-shadow: 0 1px 6px rgba(38,39,40,0.3);
+    opacity: 110%;
+}
+
+#gr-project-export:hover {
+    box-shadow: 0 1px 6px rgba(38,39,40,0.3);
+    opacity: 110%;
+}
+
+/*
+.gr-tab-contents{
+    font-family: 'Josefin Sans', sans-serif;
+}*/
+
+#gr-create-project-submit-button{
+    color: #151515;
+}
+.gr-sub-cancel-para{
+    display:flex;
+    justify-content: center;
+}
+
+#gr-create-project-submit-button, .gr-tab-button-close{
+    border: none;
+    height: 35px;
+    background-color: #ebf0f5;
+    border-radius: 3px;
+    width: 120px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #2b2b2b;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    outline:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gr-create-project-submit-button{
+    margin-right: 15px;
+}
+
+#gr-create-project-submit-button:active, #gr-create-project-submit-button:focus, #gr-create-project-submit-button:visited{
+    outline:none;
+}
+
+.gr-tab-button-close:active, .gr-tab-button-close:focus, .gr-tab-button-close:visited{
+    outline:none;
+}
+
+
+
+#gr-create-project-submit-button:hover{
+    background-color: #d1d5dd;
+}
+.gr-tab-button-close:hover{
+    background-color: #d1d5dd;
+}
+
+.gr-project-tab-input-name.form-control{
+    width: 200px;
+    height: 28px;
+    padding: 8px 13px;
+    border:none;
+    border-radius: 3px;
+    background-color: #ebf0f5;
+    margin-top: 2px;
+    font-size: 1.1em;
+    opacity: 50%;
+
+}
+
+.gr-project-tab-input-name:active, .gr-project-tab-input-name:focus, .gr-project-tab-input-name:visited{
+    outline:none;
+
+}
+
+.gr-project-tab-input-colour{
+    outline: none;
+
+    width: 50px;
+    height: 40px;
+    border-radius: 4px;
+    border:none;
+}
+.gr-project-tab-input-label.form-select, .gr-project-tab-input-calendar.form-select{
+    width: 200px;
+    height: 40px;
+    padding: 8px 13px;
+    border:none;
+    border-radius: 3px;
+    background-color: #ebf0f5;
+    margin-top: 5px;
+    opacity: 50%;
+    outline:none;
+}
+
+.gr-project-tab-input-label.form-select:active, .gr-project-tab-input-label.form-select:focus, .gr-project-tab-input-label.form-select:visited{
+    outline:none;
+
+}
+
+.gr-project-tab-input-calendar.form-select:active, .gr-project-tab-input-calendar.form-select:focus, .gr-project-tab-input-calendar.form-select:visited{
+    outline:none;
+
+}
+
+/*splash screen outline fix*/
+.gr-view:active, .gr-view:focus, .gr-view:visited{
+    outline:none;
+}
+.gr-search:active, .gr-search:focus, .gr-search:visited{
+    outline:none;
+}
+
+.gr-compose:active, .gr-compose:focus, .gr-compose:visited{
+    outline:none;
+}
+/*splash screen outline fix*/
+
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 30%;
+    cursor: context-menu;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .gr-compose {
+    opacity: 100%;
+}

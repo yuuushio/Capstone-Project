@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Popup</title>
+
+    <link rel="stylesheet" href="w3css.css" />
+    <script type="module" src="popup.js"></script>
+
+</head>
+<body style="min-width: 411px">
+
+    <div class="w3-container w3-blue">
+        <h3>GSuite Redux Companion Extension</h3>
+    </div>
+
+    <div class="w3-container">
+        <p>Current status: <span class="gr-ext-status-display w3-amber w3-padding-small">I don't know</span></p>
+    </div>
+
+    <div class="w3-container w3-pale-blue w3-hover-pale-green w3-small">
+
+        <p>Snooze for...</p>
+
+        <p><label>
+            <!-- value = seconds -->
+            <input class="w3-radio" type="radio" name="duration" value="300"/>
+            5 minutes
+        </label></p>
+
+        <p><label>
+            <input class="w3-radio" type="radio" name="duration" value="3600"/>
+            1 hour
+        </label></p>
+
+        <p><label>
+            <input class="w3-radio" type="radio" name="duration" value="7200"/>
+            2 hours
+        </label></p>
+
+        <p><label>
+            <input class="w3-radio" type="radio" name="duration" value="28800"/>
+            8 hours
+        </label></p>
+
+        <p><label>
+            <input class="w3-radio" type="radio" name="duration" value="86400"/>
+            1 day
+        </label></p>
+
+        <p><label>
+            <input class="w3-radio" type="radio" name="duration" value="9999999999"/>
+            Indefinitely
+        </label></p>
+
+        <p>
+
+            <button class="w3-btn w3-blue gr-ext-confirm-button">Confirm</button>
+            <button class="w3-btn w3-pale-red gr-ext-cancel-button">Cancel Snooze</button>
+
+            <span style="display: none" class="w3-tag w3-pink w3-large w3-animate-zoom gr-ext-alert">
+                alert text
+            </span>
+
+        </p>
+
+    </div>
+
+    <div class="w3-container w3-blue">
+        <p>Made with 💕 from Sydney, Australia</p>
+    </div>
+
+</body>
+</html>

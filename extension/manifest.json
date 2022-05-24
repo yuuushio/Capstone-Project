@@ -1,0 +1,21 @@
+{
+  "name": "GSuite Redux",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "GSuite Redux",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    "default_popup": "Popup/popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
